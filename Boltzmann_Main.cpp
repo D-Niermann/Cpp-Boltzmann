@@ -38,7 +38,7 @@ template <typename T>
 void load_data(Array<T> & arr1, Array<T> & arr2){
 	Timer t1("Loading and Assigning train_data array...");
 	// load mnist dataset
-	mnist::MNIST_dataset<std::vector, std::vector<float>, uint8_t> dataset = mnist::read_dataset<std::vector, std::vector, float, uint8_t>("/Users/Niermann/Google Drive/Kram/C++/Boltzmann C++/MNIST_LOADER");
+	mnist::MNIST_dataset<std::vector, std::vector<float>, uint8_t> dataset = mnist::read_dataset<std::vector, std::vector, float, uint8_t>("/Users/Niermann/Documents/C++/Cpp-Boltzmann/MNIST_LOADER");
 
     // std::cout << "Nbr of training images = " << dataset.training_images.size() << std::endl;
     // std::cout << "Nbr of training labels = " << dataset.training_labels.size() << std::endl;
